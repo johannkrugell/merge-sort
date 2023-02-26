@@ -1,0 +1,29 @@
+
+[1mFrom:[0m /home/johannkrugell/repos/odin-merge-sort/main.rb:24 Object#merge_sort:
+
+    [1;34m16[0m: [32mdef[0m [1;34mmerge_sort[0m(arr)
+    [1;34m17[0m:   [32mif[0m arr.length < [1;34m2[0m
+    [1;34m18[0m:     [32mreturn[0m arr
+    [1;34m19[0m:   [32mend[0m
+    [1;34m20[0m:     mid = (arr.length / [1;34m2[0m).floor
+    [1;34m21[0m:     array_new = []
+    [1;34m22[0m:     binding.pry
+    [1;34m23[0m:     
+ => [1;34m24[0m:     left = merge_sort(arr[[1;34m0[0m..mid - [1;34m1[0m])
+    [1;34m25[0m:     right = merge_sort(arr[mid..arr.length])
+    [1;34m26[0m:    
+    [1;34m27[0m:     puts [31m[1;31m"[0m[31mleft #{left}[0m[31m[1;31m"[0m[31m[0m
+    [1;34m28[0m:     puts [31m[1;31m"[0m[31mright #{right}[0m[31m[1;31m"[0m[31m[0m
+    [1;34m29[0m:     puts [31m[1;31m"[0m[31mcompare now[1;31m"[0m[31m[0m 
+    [1;34m30[0m:    
+    [1;34m31[0m:     [32mif[0m left[[1;34m0[0m] > right[[1;34m0[0m] 
+    [1;34m32[0m:       left_new = right[[1;34m0[0m]
+    [1;34m33[0m:       right_new = left[[1;34m0[0m]
+    [1;34m34[0m:       array_new << left_new
+    [1;34m35[0m:       array_new << right_new
+    [1;34m36[0m:       puts [31m[1;31m"[0m[31marray_left #{array_new}[0m[31m[1;31m"[0m[31m[0m
+    [1;34m37[0m:     [32mend[0m
+    [1;34m38[0m: 
+    [1;34m39[0m: 
+    [1;34m40[0m: [32mend[0m
+
